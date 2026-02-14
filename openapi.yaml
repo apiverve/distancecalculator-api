@@ -1,53 +1,55 @@
 openapi: 3.0.4
 info:
   title: Distance Calculator
-  description: Distance Calculator is a simple tool for calculating the distance between two locations. It returns the distance in miles and kilometers.
+  description: >-
+    Distance Calculator is a simple tool for calculating the distance between
+    two locations. It returns the distance in miles and kilometers.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/distancecalculator:
     get:
       summary: Calculate Distance
-      description: Distance Calculator is a simple tool for calculating the distance between two locations. It returns the distance in miles and kilometers.
+      description: Calculate the distance between two coordinates
       operationId: distancecalculator
       parameters:
-      - name: lat1
-        in: query
-        schema:
-          type: number
-        required: true
-        description: The latitude of the first location
-        example: '36.7783'
-      - name: lon1
-        in: query
-        schema:
-          type: number
-        required: true
-        description: The longitude of the first location
-        example: '-119.4179'
-      - name: lat2
-        in: query
-        schema:
-          type: number
-        required: true
-        description: The latitude of the second location
-        example: '34.0522'
-      - name: lon2
-        in: query
-        schema:
-          type: number
-        required: true
-        description: The longitude of the second location
-        example: '-118.2437'
+        - name: lat1
+          in: query
+          schema:
+            type: number
+          required: true
+          description: The latitude of the first location
+          example: 36.7783
+        - name: lon1
+          in: query
+          schema:
+            type: number
+          required: true
+          description: The longitude of the first location
+          example: -119.4179
+        - name: lat2
+          in: query
+          schema:
+            type: number
+          required: true
+          description: The latitude of the second location
+          example: 34.0522
+        - name: lon2
+          in: query
+          schema:
+            type: number
+          required: true
+          description: The longitude of the second location
+          example: -118.2437
       responses:
         '200':
           description: Successful Response
@@ -63,14 +65,14 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
-                  distanceMiles: 199.6804337235
-                  distanceKm: 321.253546275863
+                  distanceMiles: 199.6804337234997
+                  distanceKm: 321.2535462758628
                   location1:
                     latitude: '36.728450'
                     longitude: '-119.53571'
@@ -86,7 +88,7 @@ paths:
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -94,4 +96,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
