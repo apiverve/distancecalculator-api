@@ -17,14 +17,11 @@ def call_distancecalculator_api():
     Make a GET request to the Distance Calculator API
     """
     try:
-        # Query parameters
-        params &#x3D; {&#x27;lat1&#x27;: 36.7783, &#x27;lon1&#x27;: -119.4179, &#x27;lat2&#x27;: 34.0522, &#x27;lon2&#x27;: -118.2437}
-
         headers = {
             'x-api-key': API_KEY
         }
 
-        response = requests.get(API_URL, headers=headers, params=params)
+        response = requests.get(API_URL, headers=headers)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
