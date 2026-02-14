@@ -12,15 +12,8 @@ public class BasicExample {
         DistanceCalculatorAPIClient client = new DistanceCalculatorAPIClient("YOUR_API_KEY_HERE");
 
         try {
-            // Query parameters
-            Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
-        parameters.put(&quot;lat1&quot;, 36.7783);
-        parameters.put(&quot;lon1&quot;, -119.4179);
-        parameters.put(&quot;lat2&quot;, 34.0522);
-        parameters.put(&quot;lon2&quot;, -118.2437);
-
-            // Execute the API request
-            APIResponse response = client.execute(parameters);
+            // Execute the API request (no parameters required)
+            APIResponse response = client.execute(null);
 
             // Check if the request was successful
             if (response.isSuccess()) {
