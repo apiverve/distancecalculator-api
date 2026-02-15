@@ -1,1 +1,3 @@
-from .apiClient import DistancecalculatorAPIClient
+from .apiClient import DistancecalculatorAPIClient, DistancecalculatorAPIClientError
+
+__all__ = ['DistancecalculatorAPIClient', 'DistancecalculatorAPIClientError']
