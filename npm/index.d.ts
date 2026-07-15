@@ -4,26 +4,41 @@ declare module '@apiverve/distancecalculator' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface distancecalculatorResponse {
     status: string;
     error: string | null;
     data: DistanceCalculatorData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface DistanceCalculatorData {
-      distanceMiles: number;
-      distanceKM:    number;
-      location1:     Location;
-      location2:     Location;
+      distanceMiles:      number | null;
+      distanceKM:         number | null;
+      location1:          Location;
+      location2:          Location;
+      bearing:            number | null;
+      direction:          null | string;
+      estimatedDriveTime: null | string;
   }
   
   interface Location {
-      latitude:  string;
-      longitude: string;
-      city:      string;
-      state:     string;
+      latitude:  null | string;
+      longitude: null | string;
+      city:      null | string;
+      state:     null | string;
   }
 
   export default class distancecalculatorWrapper {
