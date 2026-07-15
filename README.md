@@ -30,7 +30,14 @@ The Distance Calculator API provides a simple, reliable way to integrate distanc
 ```javascript
 async function callDistanceCalculatorAPI() {
     try {
-        const response = await fetch('https://api.apiverve.com/v1/distancecalculator', {
+        const params = new URLSearchParams({
+            lat1: 36.7783,
+            lon1: -119.4179,
+            lat2: 34.0522,
+            lon2: -118.2437
+        });
+
+        const response = await fetch(`https://api.apiverve.com/v1/distancecalculator?${params}`, {
             method: 'GET',
             headers: {
                 'x-api-key': 'YOUR_API_KEY_HERE'
@@ -50,7 +57,7 @@ callDistanceCalculatorAPI();
 ### Using cURL
 
 ```bash
-curl -X GET "https://api.apiverve.com/v1/distancecalculator?param=value" \
+curl -X GET "https://api.apiverve.com/v1/distancecalculator?lat1=36.7783&lon1=-119.4179&lat2=34.0522&lon2=-118.2437" \
   -H "x-api-key: YOUR_API_KEY_HERE"
 ```
 
@@ -150,7 +157,7 @@ go get github.com/apiverve/distancecalculator-api/go
 |---------|---------|
 | **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
 | **Simple Integration** | Single API key authentication, consistent response format |
-| **Production Ready** | 99.9% uptime, fast response times, used by thousands of developers |
+| **Production Ready** | 99.9% uptime SLA, served from 24 global regions |
 | **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
 
 ---
@@ -169,7 +176,7 @@ go get github.com/apiverve/distancecalculator-api/go
 The Distance Calculator API is commonly used for:
 
 - **Web Applications** - Add distance calculator features to your frontend or backend
-- **Mobile Apps** - Native SDKs for iOS and Android development
+- **Mobile Apps** - Native SDKs for Android development
 - **Automation** - Integrate with n8n, Zapier, or custom workflows
 - **SaaS Products** - Enhance your product with distance calculator capabilities
 - **Data Pipelines** - Process and analyze data at scale
