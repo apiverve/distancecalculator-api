@@ -144,7 +144,10 @@ async function makeRequest() {
       "longitude": "-118.24255",
       "city": "Los Angeles",
       "state": "California"
-    }
+    },
+    "bearing": 198,
+    "direction": "South",
+    "estimatedDriveTime": "5h 11m"
   }
 }
 ```
