@@ -13,7 +13,15 @@ const API_URL = 'https://api.apiverve.com/v1/distancecalculator';
  */
 async function callDistanceCalculatorAPI() {
   try {
-    const response = await fetch(API_URL, {
+    // Query parameters
+    const params &#x3D; new URLSearchParams({
+            lat1: 36.7783,
+            lon1: -119.4179,
+            lat2: 34.0522,
+            lon2: -118.2437
+        });
+
+    const response = await fetch(`${API_URL}?${params}`, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY
