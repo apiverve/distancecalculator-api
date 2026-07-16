@@ -25,21 +25,33 @@ namespace APIVerve.API.DistanceCalculator
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
         [JsonProperty("distanceMiles")]
-        public double DistanceMiles { get; set; }
+        public double? DistanceMiles { get; set; }
 
         [JsonProperty("distanceKm")]
-        public double DistanceKm { get; set; }
+        public double? DistanceKm { get; set; }
 
         [JsonProperty("location1")]
         public Location Location1 { get; set; }
 
         [JsonProperty("location2")]
         public Location Location2 { get; set; }
+
+        [JsonProperty("bearing")]
+        public long? Bearing { get; set; }
+
+        [JsonProperty("direction")]
+        public string Direction { get; set; }
+
+        [JsonProperty("estimatedDriveTime")]
+        public string EstimatedDriveTime { get; set; }
     }
 
     public partial class Location
@@ -55,5 +67,17 @@ namespace APIVerve.API.DistanceCalculator
 
         [JsonProperty("state")]
         public string State { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
