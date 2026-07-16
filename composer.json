@@ -1,0 +1,49 @@
+{
+    "name": "apiverve/distancecalculator",
+    "description": "Distance Calculator is a simple tool for calculating the distance between two locations. It returns the distance in miles and kilometers.",
+    "version": "1.2.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIVerve",
+            "email": "hello@apiverve.com",
+            "homepage": "https://apiverve.com"
+        }
+    ],
+    "keywords": [
+        "api",
+        "apiverve",
+        "distancecalculator",
+        "distance calculator",
+        "distance calculator api",
+        "distance calculator tool",
+        "distance calculator software",
+        "distance calculator service"
+    ],
+    "homepage": "https://apiverve.com/marketplace/distancecalculator?utm_source=php&utm_medium=homepage",
+    "support": {
+        "email": "hello@apiverve.com",
+        "docs": "https://docs.apiverve.com/ref/distancecalculator",
+        "source": "https://github.com/apiverve/distancecalculator-API/tree/main/php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "APIVerve\\Distancecalculator\\": "php/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "APIVerve\\Distancecalculator\\Tests\\": "php/tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
