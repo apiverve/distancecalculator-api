@@ -194,11 +194,44 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Distance Calculator API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "distanceMiles": 199.6804337234997,
+    "distanceKm": 321.2535462758628,
+    "location1": {
+      "latitude": "36.728450",
+      "longitude": "-119.53571",
+      "city": "Sanger",
+      "state": "California"
+    },
+    "location2": {
+      "latitude": "34.044662",
+      "longitude": "-118.24255",
+      "city": "Los Angeles",
+      "state": "California"
+    },
+    "bearing": 198,
+    "direction": "South",
+    "estimatedDriveTime": "5h 11m"
+  }
 }
 ```
 
