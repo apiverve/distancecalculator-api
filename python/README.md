@@ -1,13 +1,12 @@
 Distance Calculator API
 ============
 
-Distance Calculator is a simple tool for calculating the distance between two locations. It returns the distance in miles and kilometers.
+Distance Calculator computes the distance between two coordinate pairs in miles and kilometers. Supply two latitude and longitude points to receive distances and resolved city and state names for both locations.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [Distance Calculator API](https://apiverve.com/marketplace/distancecalculator?utm_source=pypi&utm_medium=readme)
+[![PyPI version](https://img.shields.io/pypi/v/apiverve-distancecalculator.svg)](https://pypi.org/project/apiverve-distancecalculator/)
+
+This is a Python wrapper for the [Distance Calculator API](https://apiverve.com/marketplace/distancecalculator?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -29,8 +28,8 @@ pip3 install apiverve-distancecalculator
 
 ## Configuration
 
-Before using the distancecalculator API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=readme)
+Before using the Distance Calculator API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -65,7 +64,7 @@ except Exception as e:
 
 ## Usage
 
-The Distance Calculator API documentation is found here: [https://docs.apiverve.com/ref/distancecalculator](https://docs.apiverve.com/ref/distancecalculator?utm_source=pypi&utm_medium=readme).
+The Distance Calculator API documentation is found here: [https://docs.apiverve.com/ref/distancecalculator](https://docs.apiverve.com/ref/distancecalculator?utm_source=pypi&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -125,7 +124,10 @@ print(result)
       "longitude": "-118.24255",
       "city": "Los Angeles",
       "state": "California"
-    }
+    },
+    "bearing": 198,
+    "direction": "South",
+    "estimatedDriveTime": "5h 11m"
   }
 }
 ```
@@ -278,7 +280,7 @@ finally:
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -289,12 +291,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
