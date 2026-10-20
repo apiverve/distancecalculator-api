@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: Distance Calculator
   description: >-
-    Distance Calculator is a simple tool for calculating the distance between
-    two locations. It returns the distance in miles and kilometers.
+    Distance Calculator computes the distance between two coordinate pairs in
+    miles and kilometers. Supply two latitude and longitude points to receive
+    distances and resolved city and state names for both locations.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/distancecalculator:
     get:
-      summary: Calculate Distance
+      summary: Distance Calculator
       description: Calculate the distance between two coordinates
       operationId: distancecalculator
       parameters:
