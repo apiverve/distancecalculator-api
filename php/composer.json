@@ -1,7 +1,7 @@
 {
     "name": "apiverve/distancecalculator",
-    "description": "Distance Calculator is a simple tool for calculating the distance between two locations. It returns the distance in miles and kilometers.",
-    "version": "1.2.0",
+    "description": "Distance Calculator computes the distance between two coordinate pairs in miles and kilometers. Supply two latitude and longitude points to receive distances and resolved city and state names for both locations.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "distancecalculator",
-        "distance calculator",
         "distance calculator api",
-        "distance calculator tool",
-        "distance calculator software",
-        "distance calculator service"
+        "calculate distance between coordinates",
+        "coordinate distance",
+        "lat long distance",
+        "distance between two points"
     ],
-    "homepage": "https://apiverve.com/marketplace/distancecalculator?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/distancecalculator?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/distancecalculator",

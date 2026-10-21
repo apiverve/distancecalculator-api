@@ -1,6 +1,6 @@
 # Distance Calculator API - PHP Package
 
-Distance Calculator is a simple tool for calculating the distance between two locations. It returns the distance in miles and kilometers.
+Distance Calculator computes the distance between two coordinate pairs in miles and kilometers. Supply two latitude and longitude points to receive distances and resolved city and state names for both locations.
 
 ## Installation
 
@@ -102,11 +102,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/distancecalculator?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/distancecalculator?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/distancecalculator?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/distancecalculator?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/distancecalculator?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/distancecalculator?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
