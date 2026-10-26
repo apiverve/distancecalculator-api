@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/distancecalculator",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Distance Calculator computes the distance between two coordinate pairs in miles and kilometers. Supply two latitude and longitude points to receive distances and resolved city and state names for both locations.",
   "main": "index.js",
   "types": "index.d.ts",
