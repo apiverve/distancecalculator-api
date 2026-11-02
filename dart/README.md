@@ -1,11 +1,11 @@
 # Distance Calculator API - Dart/Flutter Client
 
-Distance Calculator is a simple tool for calculating the distance between two locations. It returns the distance in miles and kilometers.
+Distance Calculator computes the distance between two coordinate pairs in miles and kilometers. Supply two latitude and longitude points to receive distances and resolved city and state names for both locations.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_distancecalculator.svg)](https://pub.dev/packages/apiverve_distancecalculator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [Distance Calculator API](https://apiverve.com/marketplace/distancecalculator?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [Distance Calculator API](https://apiverve.com/marketplace/distancecalculator?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_distancecalculator: ^1.1.14
+  apiverve_distancecalculator: ^1.2.4
 ```
 
 Then run:
@@ -68,19 +68,22 @@ void main() async {
       "longitude": "-118.24255",
       "city": "Los Angeles",
       "state": "California"
-    }
+    },
+    "bearing": 198,
+    "direction": "South",
+    "estimatedDriveTime": "5h 11m"
   }
 }
 ```
 
 ## API Reference
 
-- **API Home:** [Distance Calculator API](https://apiverve.com/marketplace/distancecalculator?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/distancecalculator](https://docs.apiverve.com/ref/distancecalculator?utm_source=dart&utm_medium=readme)
+- **API Home:** [Distance Calculator API](https://apiverve.com/marketplace/distancecalculator?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/distancecalculator](https://docs.apiverve.com/ref/distancecalculator?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -88,4 +91,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)

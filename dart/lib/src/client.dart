@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// Distance Calculator API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/distancecalculator?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/distancecalculator?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [lat1] (required) - The latitude of the first location [min: -90, max: 90]
