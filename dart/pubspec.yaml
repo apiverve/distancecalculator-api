@@ -1,6 +1,6 @@
 name: apiverve_distancecalculator
 description: "Distance Calculator computes the distance between two coordinate pairs in miles and kilometers. Supply two latitude and longitude points to receive distances and resolved city and state names for both locations."
-version: 1.2.4
+version: 1.2.5
 homepage: https://apiverve.com/marketplace/distancecalculator?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/distancecalculator-api/tree/main/dart
 
