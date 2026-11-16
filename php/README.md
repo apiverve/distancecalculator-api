@@ -1,6 +1,6 @@
 # Distance Calculator API - PHP Package
 
-Distance Calculator computes the distance between two coordinate pairs in miles and kilometers. Supply two latitude and longitude points to receive distances and resolved city and state names for both locations.
+Distance Calculator computes the distance between two coordinate pairs in miles and kilometers. Supply two latitude and longitude points anywhere in the world to receive both distances, plus the nearest city and state for points in the US.
 
 ## Installation
 
