@@ -3,8 +3,9 @@ info:
   title: Distance Calculator
   description: >-
     Distance Calculator computes the distance between two coordinate pairs in
-    miles and kilometers. Supply two latitude and longitude points to receive
-    distances and resolved city and state names for both locations.
+    miles and kilometers. Supply two latitude and longitude points anywhere in
+    the world to receive both distances, plus the nearest city and state for
+    points in the US.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support

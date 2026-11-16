@@ -1,6 +1,6 @@
 # [Distance Calculator API](https://apiverve.com/marketplace/distancecalculator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Distance Calculator computes the distance between two coordinate pairs in miles and kilometers. Supply two latitude and longitude points to receive distances and resolved city and state names for both locations.
+Distance Calculator computes the distance between two coordinate pairs in miles and kilometers. Supply two latitude and longitude points anywhere in the world to receive both distances, plus the nearest city and state for points in the US.
 
 The Distance Calculator API provides a simple, reliable way to integrate distance calculator functionality into your applications. Built for developers who need production-ready distance calculator capabilities without the complexity of building from scratch.
 
