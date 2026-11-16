@@ -1,6 +1,6 @@
 # Distance Calculator API - Dart/Flutter Client
 
-Distance Calculator computes the distance between two coordinate pairs in miles and kilometers. Supply two latitude and longitude points to receive distances and resolved city and state names for both locations.
+Distance Calculator computes the distance between two coordinate pairs in miles and kilometers. Supply two latitude and longitude points anywhere in the world to receive both distances, plus the nearest city and state for points in the US.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_distancecalculator.svg)](https://pub.dev/packages/apiverve_distancecalculator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_distancecalculator: ^1.2.5
+  apiverve_distancecalculator: ^1.2.6
 ```
 
 Then run:
