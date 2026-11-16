@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "apiverve_distancecalculator"
-  spec.version       = "1.2.5"
+  spec.version       = "1.2.6"
   spec.authors       = ["APIVerve"]
   spec.email         = ["hello@apiverve.com"]
 
   spec.summary       = "Distance Calculator API - Ruby Client"
-  spec.description   = "Distance Calculator computes the distance between two coordinate pairs in miles and kilometers. Supply two latitude and longitude points to receive distances and resolved city and state names for both locations."
+  spec.description   = "Distance Calculator computes the distance between two coordinate pairs in miles and kilometers. Supply two latitude and longitude points anywhere in the world to receive both distances, plus the nearest city and state for points in the US."
   spec.homepage      = "https://apiverve.com/marketplace/distancecalculator?utm_source=ruby&utm_medium=referral&utm_content=homepage"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 2.7.0"
